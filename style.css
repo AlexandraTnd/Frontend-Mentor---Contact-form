@@ -5,6 +5,7 @@
 body {
     background-color: hsl(148, 38%, 91%);
     height: 100vh;
+    font-family: "Karla";
 }
 
 form {
@@ -57,7 +58,7 @@ textarea {
 textarea {
     resize: none;
     display: block;
-    width: 100%;
+    width: 600px;
 }
 
 section {
@@ -69,8 +70,34 @@ button {
     color: white;
     border: none;
     display: block;
-    width: 100%;
+    width: 600px;
     padding: 5px;
     margin: 15px 0;
     border-radius: 5px;
+}
+
+input:focus {
+    outline: 1px solid hsl(169, 82%, 27%);
+}
+
+textarea:focus {
+    outline: 1px solid hsl(169, 82%, 27%);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: hsl(169, 82%, 27%);
+}
+
+input[type="radio"]:focus, input[type="checkbox"]:focus {
+    outline: none;
+}
+
+.modal-body {
+    background-color: hsl(187, 24%, 22%);
+    color: white;
+}
+
+p {
+    color: rgb(189, 188, 188);
 }
