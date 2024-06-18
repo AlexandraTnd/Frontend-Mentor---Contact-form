@@ -6,6 +6,7 @@ body {
     background-color: hsl(148, 38%, 91%);
     height: 100vh;
     font-family: "Karla";
+    width: 100vw;
 }
 
 form {
@@ -108,4 +109,41 @@ p {
 .green-box {
     background-color: hsl(148, 38%, 91%);
     border: 1px solid hsl(169, 82%, 27%);
+}
+
+@media screen and (max-width: 600px) {
+    #name-group {
+        flex-direction: column !important;
+    }
+    #fname, #lname, #email, textarea {
+        margin : 0 !important;
+        width: 90% !important;
+    }
+
+    #last-name-group {
+        margin-left: 0;
+    }
+
+    input[type='radio'] {
+        margin: 0;
+    }
+
+    .radio-field {
+        margin-right: 0;
+        width: 90%;
+    }
+
+    #radio-group {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    button {
+        width: 90%;
+    }
+
+    form {
+        width: 95vw;
+        margin: 15px;
+    }
 }

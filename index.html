@@ -37,8 +37,8 @@
   <form>
     <h1>Contact Us</h1>
 
-    <section class="d-flex flex-row" id="first-name-group">
-      <div class="d-flex flex-column">
+    <section class="d-flex flex-row" id="name-group">
+      <div class="d-flex flex-column" id="first-name-group">
         <label for="fname">First Name <span>*</span></label>
         <input type="text" id="fname" name="fname">
         <div id="fname-warning" class="warning hide">This field is required</div>
@@ -59,7 +59,7 @@
 
     <section>
       Query Type <span>*</span>
-      <div class="d-flex align-items-center">
+      <div class="d-flex " id="radio-group">
         <div class="radio-field" id="general-enquiry">
           <input type="radio" name="query_type" value="general-enquiry">
           <label for="general-enquiry">
