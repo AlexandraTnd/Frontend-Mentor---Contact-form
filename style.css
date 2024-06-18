@@ -29,8 +29,11 @@ span {
 }
 
 .warning {
-    display: none;
     color: red;
+}
+
+.hide {
+    display: none;
 }
 
 #last-name-group {
@@ -100,4 +103,9 @@ input[type="radio"]:focus, input[type="checkbox"]:focus {
 
 p {
     color: rgb(189, 188, 188);
+}
+
+.green-box {
+    background-color: hsl(148, 38%, 91%);
+    border: 1px solid hsl(169, 82%, 27%);
 }

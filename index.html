@@ -41,51 +41,51 @@
       <div class="d-flex flex-column">
         <label for="fname">First Name <span>*</span></label>
         <input type="text" id="fname" name="fname">
-        <div id="fname-warning" class="warning">This field is required</div>
+        <div id="fname-warning" class="warning hide">This field is required</div>
       </div>
       <div class="d-flex flex-column" id="last-name-group">
         <label for="lname">Last Name <span>*</span></label>
         <input type="text" id="lname" name="lname">
-        <div id="lname-warning" class="warning">This field is required</div>
+        <div id="lname-warning" class="warning hide">This field is required</div>
       </div>
     </section>
 
     <section class="d-flex flex-column">
       <label for="email">Email Address <span>*</span></label>
       <input type="email" id="email" name="email">
-      <div id="email-not-valid" class="warning">Please enter a valid email address</div>
-      <div id="email-warning" class="warning">This field is required</div>
+      <div id="email-not-valid" class="warning hide">Please enter a valid email address</div>
+      <div id="email-warning" class="warning hide">This field is required</div>
     </section>
 
     <section>
       Query Type <span>*</span>
       <div class="d-flex align-items-center">
-        <div class="radio-field">
-          <input type="radio" id="general-enquiry" name="query_type" value="general-enquiry">
+        <div class="radio-field" id="general-enquiry">
+          <input type="radio" name="query_type" value="general-enquiry">
           <label for="general-enquiry">
             General Enquiry
           </label>
         </div>
-        <div class="radio-field">
-          <input type="radio" id="support-request" name="query_type" value="support-request">
+        <div class="radio-field" id="support-request">
+          <input type="radio"  name="query_type" value="support-request">
           <label for="support-request">
             Support Request
           </label>
         </div>
       </div>
-      <div id="query-warning" class="warning">Please select a query type</div>
+      <div id="query-warning" class="warning hide">Please select a query type</div>
     </section>
 
     <section>
       <label for="message">Message <span>*</span></label>
       <textarea id="message" name="message" required></textarea>
-      <div id="message-warning" class="warning">This field is required</div>
+      <div id="message-warning" class="warning hide">This field is required</div>
     </section>
 
     <section>
       <input type="checkbox" id="consent" name="consent" value="consent">
       <label for="consent">I consent to being contacted by the team <span>*</span></label>
-      <div id="consent-warning" class="warning">To submit this form, please consent to being contacted
+      <div id="consent-warning" class="warning hide">To submit this form, please consent to being contacted
     </section>
 
 
